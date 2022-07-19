@@ -1,0 +1,9 @@
+/**************************
+Layout
+**************************/
+
+.gallery-container{
+    @include flexy($dir: column, $just: center);
+    @extend %center;
+    max-width: $max-width;
+}

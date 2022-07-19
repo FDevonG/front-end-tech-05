@@ -1,0 +1,11 @@
+%center{
+    margin-right:auto;
+    margin-left: auto;
+}
+
+%focused {
+    outline:none;
+    box-shadow: 4px 4px 5px #63737D;
+    transform: scale(1.1);
+    border-radius: $border-radius;
+}

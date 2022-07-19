@@ -1,0 +1,28 @@
+/**************************
+Gallery
+**************************/
+
+.gallery{
+    @extend %center;
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:20px;
+    & a {
+        justify-self: center;
+        max-height: $max-img-dim;
+        max-width: $max-img-dim;
+    }
+    & a:focus,
+    & a:hover {
+        @extend %focused;
+        & img {
+            border-radius: $border-radius;
+        }
+    }
+
+    & a,
+    & img {
+        transition: $animation-duration;
+    }
+}

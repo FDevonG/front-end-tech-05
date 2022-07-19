@@ -2,4 +2,7 @@
 Component main scss file
 **************************/
 
-@import 'baguetteBox.scss';
+@import 'baguetteBox.scss',
+        'layout.scss',
+        'forms.scss',
+        'gallery.scss';
