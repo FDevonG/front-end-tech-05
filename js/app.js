@@ -18,19 +18,11 @@ function SearchImages() {
 	for (let i = 0; i < imgAnchors.length; i++) {
 		if (imgAnchors[i].getAttribute('data-caption') !== null){
 			if (!imgAnchors[i].getAttribute('data-caption').toUpperCase().includes(userSearch.toUpperCase())){
-        TurnImageOff(imgAnchors[i]);
+        imgAnchors[i].style.display = "none";
       }
       else {
-        TurnImageOn(imgAnchors[i]);
+        imgAnchors[i].style.display = "inline-block";
       }
 		}
 	}
-}
-
-function TurnImageOff(element){
-  element.style.display = "none";
-}
-
-function TurnImageOn(element){
-  element.style.display = "inline-block";
 }
