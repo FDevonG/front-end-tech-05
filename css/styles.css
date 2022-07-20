@@ -20,6 +20,12 @@ form input:focus, .gallery a:focus,
   border-radius: 5px;
 }
 
+/* line 13, ../../../../../Users/devongillis/Projects/Websites/front-end-tech-05/scss/utilities/_placeholders.scss */
+form input, .gallery a,
+.gallery img {
+  transition: 0.5s cubic-bezier(0, -1, 1, 2);
+}
+
 /**************************
 Base main scss file
 **************************/
@@ -702,8 +708,6 @@ form {
 form input {
   width: 100%;
   padding: 15px;
-  border-radius: 5px;
-  transition: 0.5s;
   border: 2px solid lightgrey;
 }
 
@@ -729,12 +733,6 @@ Gallery
 .gallery a:focus img,
 .gallery a:hover img {
   border-radius: 5px;
-}
-
-/* line 24, ../../../../../Users/devongillis/Projects/Websites/front-end-tech-05/scss/components/_gallery.scss */
-.gallery a,
-.gallery img {
-  transition: 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -23,6 +23,6 @@ Gallery
 
     & a,
     & img {
-        transition: $animation-duration;
+        @extend %animation;
     }
 }
