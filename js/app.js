@@ -6,12 +6,7 @@ window.addEventListener('load', function() {
 });
 
 searchField.addEventListener('input', () => {
-  if(searchField.value.trim() === ""){
-    TurnAllImagesOn();
-  }
-  else {
     SearchImages();
-  }
 });
 
 /*
@@ -30,13 +25,6 @@ function SearchImages() {
       }
 		}
 	}
-}
-
-//this turns all of the images back on in the event that someone clears the input
-function TurnAllImagesOn (){
-  for (let i = 0; i < imgAnchors.length; i++) {
-    TurnImageOn(imgAnchors[i]);
-  }
 }
 
 function TurnImageOff(element){
